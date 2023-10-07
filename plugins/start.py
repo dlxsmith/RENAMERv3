@@ -14,8 +14,8 @@ CHANNEL = os.environ.get('CHANNEL',"")
 import datetime
 from datetime import date as date_
 STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+log_channel = int(os.environ.get("LOG_CHANNEL","-1001902346541"))
+token = os.environ.get('TOKEN','6640601389:AAEQaqs79FcPTW5YMdwNZv_rhV7M7urWE1k')
 botid = token.split(':')[0]
 
 #Part of Day --------------------
@@ -42,8 +42,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/+U_RkJuFQZtgzMjZl") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/animes_in_30mb") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -55,8 +55,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/+U_RkJuFQZtgzMjZl") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/animes_in_30mb") ]  ]))
 	        except:
 	             return
 	    else:
@@ -71,8 +71,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/+U_RkJuFQZtgzMjZl") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/animes_in_30mb") ]  ]))
 	         
 
 
@@ -88,7 +88,7 @@ async def send_doc(client,message):
        		await message.reply_text("**__You are not subscribed my channel__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/+U_RkJuFQZtgzMjZl") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
