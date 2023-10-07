@@ -29,6 +29,12 @@ async def vip(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
 	inlimit  = 10737418240000
+	try:
+		aa = await bot.get_chat(user_id)
+		user_id = aa.id
+	except Exception as ee:
+		await update.message.edit(str(ee))
+		return
 	uploadlimit(int(user_id),10737418240000)
 	usertype(int(user_id),"VIP")
 	addpre(int(user_id))
